@@ -166,14 +166,13 @@ func main() {
                 flag.PrintDefaults()
         }
 
-        // Use -q for specifying the introspection JSON file.
+        // Use -i for specifying the introspection JSON file.
         schemaFile := flag.String("i", "", "JSON file with the GraphQL introspection schema")
         // The -m flag indicates that mutations should also be generated.
         includeMutations := flag.Bool("m", false, "Include mutations in generation")
         flag.Parse()
 
         if *schemaFile == "" {
-                fmt.Fprintln(os.Stderr, "Please supply an introspection file with the -q flag.")
                 flag.Usage()
                 os.Exit(1)
         }
@@ -225,4 +224,4 @@ func main() {
                         }
                 }
         }
-			}
+}
