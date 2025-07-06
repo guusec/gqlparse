@@ -5,4 +5,6 @@ quick little program that parses graphql schemas obtained through introspection 
 ### usage:
 -i input file/extract queries (mandatory)
 <br/>
--m extract mutations (optional)
+-m extract mutations (optional)</br>
+-intro generates graphql introspection query in multiple formats (json, url, curl)
+-url specify url in curl format introspection query
